@@ -40,3 +40,22 @@ def insert_reading(request):
     ro=reading.objects.get_or_create(Rid=io, Bname=bo, Tdate=td, Sdate=sd)[0]
     ro.save()
     return HttpResponse('<h1>DATE Inserted..................... ')
+
+
+
+
+
+
+
+
+
+def display_liabrary(request):
+    QSTO=Liabrary.objects.all()
+    d={'QSTO':QSTO}
+    return render (request, 'display_liabrary.html', context=d)
+
+
+def display_books(request):
+    QSTO=Books.objects.all()
+    d={'QSTO':QSTO}
+    return render (request, 'display_books.html',context=d)

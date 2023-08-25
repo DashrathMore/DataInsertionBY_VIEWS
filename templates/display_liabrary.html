@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center>
+<table border='5px' cellspacing="5px" cellpadding="10px">
+    <h1>Liabrary</h1>
+<tr>
+    <th>section</th>
+</tr>
+
+{% for lo in QSTO %}
+<tr>
+    <td>{{lo.section}}</td>
+</tr>
+
+
+{% endfor %}
+</table>
+
+    </center>
+</body>
+</html>

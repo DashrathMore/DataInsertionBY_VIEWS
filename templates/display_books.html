@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table cellspacing="10px" cellpadding="10px" border="10px">
+            <h1>Books</h1>
+            <tr>
+                <th>SECTION</th>
+                <th>BOOKNAME</th>
+                <th>AUTHER</th>
+            </tr>
+            {% for bo in QSTO %}
+            <tr>
+                <td>{{ bo.section }}</td>
+                <td>{{ bo.Bname }}</td>
+                <td>{{ bo.auther }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

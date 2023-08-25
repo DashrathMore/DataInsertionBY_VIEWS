@@ -24,4 +24,6 @@ urlpatterns = [
     path('insert_book/', insert_Book, name='insertbook'),
     path('insert_reader/', insert_reader, name='insert_reader'),
     path('insert_reading/', insert_reading, name='insert_reading'),
+    path('display_liabrary/', display_liabrary, name='display_liabrary'),
+    path('display_books/', display_books, name='display_books'),
 ]
